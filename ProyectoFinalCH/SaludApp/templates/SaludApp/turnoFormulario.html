@@ -1,0 +1,19 @@
+
+{% extends "SaludApp/padre.html" %}
+{% load static %}
+{% block medicos %}
+<body>
+    <form action = "{% url 'turnoFormulario' %}" method="POST"> {% csrf_token %}
+    
+    <table style="color: white">
+    
+    </table>
+    
+        <input type="submit" value="Enviar">
+    </form>
+    
+    
+    
+    
+    </body>
+{% endblock %}
